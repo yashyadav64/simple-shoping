@@ -525,8 +525,67 @@ document.getElementById('hamburger').addEventListener('click', function() {
                 text-align: center;
             }
         }
-    </style>
-    
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f9f9f9;
+        }
+        .product-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          padding: 20px;
+          gap: 20px;
+        }
+        .product-card {
+          background-color: white;
+          width: 220px;
+          border: 1px solid #ddd;
+          border-radius: 10px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          text-align: center;
+          padding: 15px;
+        }
+        .product-card img {
+          max-width: 100%;
+          height: auto;
+          border-radius: 10px 10px 0 0;
+        }
+        .product-title {
+          font-size: 14px;
+          color: #333;
+          margin: 10px 0;
+        }
+        .price {
+          font-size: 16px;
+          color: #e53935;
+          font-weight: bold;
+          margin: 5px 0;
+        }
+        .offers {
+          background-color: #4caf50;
+          color: white;
+          font-size: 12px;
+          padding: 5px 10px;
+          border-radius: 20px;
+          display: inline-block;
+          margin-top: 10px;
+        }
+        .add-to-cart {
+          background-color: #007bff;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          font-size: 14px;
+          border-radius: 5px;
+          cursor: pointer;
+          margin-top: 10px;
+        }
+        .add-to-cart:hover {
+          background-color: #0056b3;
+        }
+      </style>
 <div class="cart-container">
     <!-- Product 1 -->
     <div class="cart-item">
@@ -619,112 +678,241 @@ document.getElementById('hamburger').addEventListener('click', function() {
         <button> buy </button></form>
     </div>
 </div>
+      
       <div class="product-container">
-          <!-- Product Card 1 -->
-           <a href="D:\MY DATA COCHING\website 12\pro 1.html">
+        <div class="product-card">
+          <img src="https://www.reliancedigital.in/medias/O-General-18CGTB-Split-AC-581026976-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxNjQzN3xpbWFnZS9qcGVnfGltYWdlcy9oMzIvaDI5LzEwMTIwNTE1NjE2Nzk4LmpwZ3wxYzdhNDJhMDgxNDNiYWI1NTEwMTViZWJlNWFiNjc3ZjExZjhmNWI2ODJkMjY5MmYzMzkzYjgyMTRiZjgzODVi" alt="Product 1">
+          <h3 class="product-title">Godrej 1.5 Ton 5 Star Inverter Split AC, 18ITC5-W (Hidden display in IDU, Acoustic Jacket on Compressor, Hydrophilic Blue Fins, 2023 launch)(581110299)</h3>
+          <p class="price">₹79,900.00</p>
+          <div class="offers">OFFERS AVAILABLE</div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://www.reliancedigital.in/medias/Daikin-ATKL35U-Air-Conditioners-581027039-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxMzMwMnxpbWFnZS9qcGVnfGltYWdlcy9oMjYvaDM4Lzk5NzQwODMxNTgwNDYuanBnfDFlMmEyOWE1MmUzZDRiNDYyMWMwMWUzOGFkYjI4NWEzNzIxMDAxYjM1YWYxZTJlMjQ2MjVkMjE4NTY5MTIzYjQ" alt="Product 2">
+          <h3 class="product-title">Lloyd 1.5 Ton 3 star 5-in-1 Convertible Inverter Split AC, GLS18I3FWBBV/3LWBBA (PM 2.5 Filter, 4 Way Swing, Cools at 52 degreeC, 100 Per. Copper, Wifi Ready, Turbo Cool, Golden Fin Evaporator, 2023 launch)(581027120)</h3>
+          <p class="price">₹51,900.00</p>
+          <div class="offers">OFFERS AVAILABLE</div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://www.reliancedigital.in/medias/Lloyd-Air-Conditioner-581110663-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxNDMwMXxpbWFnZS9qcGVnfGltYWdlcy9oY2YvaDIyLzEwMTA3NzEwMDEzNDcwLmpwZ3xkYmE3ZWJkNDVkNzQ0NTU1ZmI5NzE3YzZlNjAyY2Q4ZTVkNDNmOTZiYTlkNWIzNTMyN2FjMzE2YjhmYzMwNTgw" alt="Product 3">
+          <h3 class="product-title">BLUESTAR 1.5 Ton 3 Star 5 in 1 convertible Inverter Split AC -IC318MNU (100% copper, 4 way swing, Cooling Mode, Turbo Cool, Comfort sleep, 2023 launch)(581110331)</h3>
+          <p class="price">₹18,999.00</p>
+          <div class="offers">OFFERS AVAILABLE</div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://www.reliancedigital.in/medias/Voltas-243V-Vectra-Elegant-Split-Air-conditioner-581110317-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxNTIzM3xpbWFnZS9qcGVnfGltYWdlcy9oMDcvaDI2Lzk5NTIwNDk3NTgyMzguanBnfDVkNzA0YTE3Y2Y4MGVhNzc2OWM3NDQ1OTVlYjFjYWFlOTVmN2M1ZjE2ZjRjMTgyNTViYTQxYjcxNTQ4ZmI0ZTg" alt="Product 4">
+          <h3 class="product-title">Godrej 1.5 Ton 3 Star 5-in-1 Convertible Inverter Split AC, 18TTC3-W (i-Sense Feature, Hidden display in IDU, Acoustic Jacket on Compressor, Hydrophilic Blue Fins, 2023 launch)(581110297)
+          </h3>
+          <p class="price">₹33,490.00</p>
+          <div class="offers">OFFERS AVAILABLE</div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://www.reliancedigital.in/medias/Godrej-18ITC5-W-Air-Conditioner-581110299-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxNDk1NnxpbWFnZS9qcGVnfGltYWdlcy9oZDMvaDY4Lzk5NTYzNzc5ODUwNTQuanBnfDhmMWFjMTRjNmM0ZjJmMDRkMmE1NjQwM2RlNzU2YzBjYzFlYTNmMGI5NWIyYjY3NWIxNmJkYjFmYTNjNzI3YzM" alt="Product 5">
+          <h3 class="product-title">Lloyd 1.5 Ton 3 star split AC GLS18C3XWBEP (PM 2.5 Filter, 4 way swing, Cools at 48 degree C, 100 percent copper, Turbo Cool, Blue Fin Evaporator)(581027118)</h3>
+          <p class="price">₹23,999.00</p>
+          <div class="offers">OFFERS AVAILABLE</div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+        <div class="product-container">
           <div class="product-card">
-              <img src="https://www.reliancedigital.in/medias/Lenovo-Yoga-Laptop-494351836-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2Mzk3MHxpbWFnZS9qcGVnfGltYWdlcy9oODMvaDJmLzEwMTAxNTEwODk3Njk0LmpwZ3wzMjA1YTQ2YTc1OWIxYjY1MDI0NDhjNWJlMzRiOTNhYWUyYTM1NTQyOGYxY2ZjOGQ4MmQyMzcwZjRjMjlkYjkw" alt="Laptop Image">
-              <div class="product-details">
-                  <div class="product-name">Lenovo IP3 25IN Laptop (16 GB RAM/512 GB, 13 Gen Core i5-13420H, 15.6 inch-39.6 cm Display)(494351836)
-                  </div>
-                  <div class="product-price">₹57,500.00</div>
-              </div>
-              <div class="actions">
-                  <button>Compare</button>
-                  <button>Add to Wishlist</button>
-              </div>
-          </div></a>
-  
-          <!-- Product Card 2 -->
-          <div class="product-card">
-              <img src="https://www.reliancedigital.in/medias/Lenovo-Ideapad-Gaming-Laptop-493838769-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxMjc0OXxpbWFnZS9qcGVnfGltYWdlcy9oYzUvaDdkLzEwMDQwMDUyOTA4MDYyLmpwZ3w5ZDdkM2JiN2QwMTk0OTAyNWYxZWJhYjRmY2FkNTc3M2Q2MzkzMjdlNTU1OWZkZGIxOTNjNzE5ODBiYTFlNTEx" alt="Laptop Image">
-              <div class="product-details">
-                  <div class="product-name">Lenovo 2SIN IdeadPad Silm5 Laptop (AMD Ryzen R7-7730U/16 GB /512 GB SSD/Windows 11/ MSO/35.56 cm (14 inch)(493838769)
-                  </div>
-                  <div class="product-price"> ₹63,499.00</div>
-              </div>
-              <div class="actions">
-                  <button>Compare</button>
-                  <button>Add to Wishlist</button>
-              </div>
+            <img src="https://www.reliancedigital.in/medias/Boat-160W-Partypal-400-494249576-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzNDU3NHxpbWFnZS9qcGVnfGltYWdlcy9oNGYvaDkxLzEwMDU0ODQxMDQwOTI2LmpwZ3xjZmQ5NjYwMmE5ZGExODE1NmJlNGMwMGE0MjY4ZWEyMzlhM2U1ZTg1YzI3ZGNiYzUwNmY1MWNkN2VmOWY1MzFm" alt="Product 1">
+            <h3 class="product-title">Apple iPad Air 1st Gen</h3>
+            <p class="price">₹79,900.00</p>
+            <div class="offers">OFFERS AVAILABLE</div>
+            <button class="add-to-cart">Add to Cart</button>
           </div>
-  
-          <!-- Product Card 3 -->
           <div class="product-card">
-              <img src="https://www.reliancedigital.in/medias/Len-LOQ-15-8BIN-494352954-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w3MTczOHxpbWFnZS9qcGVnfGltYWdlcy9oMTcvaGU3LzEwMTI0OTY4OTUxODM4LmpwZ3wwNWMwMzk4ZTk0YjhkZmNiOTMwNWI2MzQxZjhiNWQ3YjMwZmQzMDVlNjZiY2RiMDk0NzAwOWRiYWExMTA4NmJl" alt="Laptop Image">
-              <div class="product-details">
-                  <div class="product-name">Lenovo LOQ 15IAX9 Intel Core i5-12450HX Laptop (39.62 cm (15.6 inch)/8BIN/12i5HX/12 GB/512 GB SSD/2050/BT), Luna Grey(494352954)</div>
-                  <div class="product-price">₹59,599.00</div>
-              </div>
-              <div class="actions">
-                  <button>Compare</button>
-                  <button>Add to Wishlist</button>
-              </div>
+            <img src="https://www.reliancedigital.in/medias/boAt-PartyPal-195-Speaker-494249574-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0ODkwMXxpbWFnZS9qcGVnfGltYWdlcy9oZDAvaDI1LzEwMjIxMjA1NzQ5NzkwLmpwZ3xkMmVlZmQ0YmU2YmY2ODVjMzhmMzdlZDdjZGRhY2U1YTQxMjI4ZTY1Mjg1YTQ2MzE4ZmUxOWNkODhkNWMyN2I0" alt="Product 2">
+            <h3 class="product-title">Apple iPad Air 5th Gen</h3>
+            <p class="price">₹51,900.00</p>
+            <div class="offers">OFFERS AVAILABLE</div>
+            <button class="add-to-cart">Add to Cart</button>
           </div>
-          <A href="D:\MY DATA COCHING\website 12\PRO 2.html">
-            <!-- Product Card 4 -->
+          <div class="product-card">
+            <img src="https://www.reliancedigital.in/medias/JBL-Encore-Essential-Speaker-492796853-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0MjI4NXxpbWFnZS9qcGVnfGltYWdlcy9oOWYvaDg2Lzk4MjQzMjk0NjU4ODYuanBnfDEzMWUyMDdiNGU3ZDFiZGYwZjU4YzAxODQ3MWZjOTRkZmNjYjljYTczNDlkMTFkZDczMTE4N2M4NWE5ZjI0OTU" alt="Product 3">
+            <h3 class="product-title">OnePlus Pad Go</h3>
+            <p class="price">₹18,999.00</p>
+            <div class="offers">OFFERS AVAILABLE</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="https://www.reliancedigital.in/medias/Sony-MHC-V13-Party-Speakers-491898102-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzNjQ5OHxpbWFnZS9qcGVnfGltYWdlcy9oZDEvaDM0Lzk0MDgwMDM1NzE3NDIuanBnfDFiNGMzNDI1Y2IxMjc3NTE4ZjRlY2NiODJjM2U4OTRlMTExMjUzNjc1ZmIxODNmM2IwODRkNDAwYjk5OWNmOTc" alt="Product 4">
+            <h3 class="product-title">Apple iPad 10th Gen</h3>
+            <p class="price">₹33,490.00</p>
+            <div class="offers">OFFERS AVAILABLE</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="https://www.reliancedigital.in/medias/Boat-Partypal320-Speaker-494249575-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzNDEyM3xpbWFnZS9qcGVnfGltYWdlcy9oZmIvaGJlLzEwMDYxMTQ0MjI3ODcwLmpwZ3xjZTIyMDUxODgwNzRjODY4MzEyNTI3ZTFkNTdkYzk2YWRkY2VlNjhkMDVjMDk2NTI3ODFlNDZhZDNmYTliNTg3" alt="Product 5">
+            <h3 class="product-title">Samsung Galaxy Tab A9+</h3>
+            <p class="price">₹23,999.00</p>
+            <div class="offers">OFFERS AVAILABLE</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-container">
             <div class="product-card">
-              <img src="https://p1-ofp.static.pub//fes/cms/2023/06/08/t2y9bc86e6bjrrm5a9qu2go1d3x9pw139172.png" alt="Laptop Image">
-              <div class="product-details">
-                  <div class="product-name">ThinkPad E16 (16, Intel)(417117))</div>
-                  <div class="product-price"> ₹48,491
-  
-                  </div>
+              <img src="https://www.reliancedigital.in/medias/Samsung-Watch7-Smartwatch-494421975-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0NjAwNXxpbWFnZS9qcGVnfGltYWdlcy9oN2EvaDdlLzEwMTcyODIwODQ4NjcwLmpwZ3xmM2ZiYzcwNDRiMGExMmJlNGZiYTUyOGUyMDQxN2VlZjI0MTk0MDM3ZDc5MzExMjBiZjIxODFmNGEzMWVmOWRh" alt="Product 1">
+              <h3 class="product-title">Samsung Galaxy Watch 7 40 mm Bluetooth + LTE Smart Watch, 3nm Processor, Dual GPS, Sapphire Glass & Armour Aluminum, 5ATM & IP68, HR, SpO2, BP & ECG Monitor, Green, SM-L305FZGAINS(494421975)</h3>
+              <p class="price">₹30,799.00</p>
+              <div class="offers">OFFERS AVAILABLE</div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+              <img src="https://www.reliancedigital.in/medias/Apple-Watch-Series-10-494423153-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyODI3MXxpbWFnZS9qcGVnfGltYWdlcy9oMzgvaGE4LzEwMTk1MTQ2MDE0NzUwLmpwZ3wzMmQxYzM2YTQ0NWUxOWVkY2ZiM2E2ZGViNzNmN2Y4ZDQ0MTk5Y2Y2OTk2M2M2ZTQ0ZmVkMDUzNWYwMGVmZjBh" alt="Product 2">
+              <h3 class="product-title">Apple Watch Series 10 GPS 46 mm Jet Black Aluminium Case with Black Sport Band - M/L(494423153)</h3>
+              <p class="price">₹49,900.00</p>
+              <div class="offers">OFFERS AVAILABLE</div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+              <img src="https://www.reliancedigital.in/medias/Google-Pixel-Watch-3-Smartwatch-494422710-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wxMjg1NzR8aW1hZ2UvanBlZ3xpbWFnZXMvaGVhL2gzNS8xMDIxMDc1MTE4NDkyNi5qcGd8MTdiNzAxMmE1ZjhkOTNkN2Y2YzRhNzZlM2I4ZDBmZmRiNmVhNGMyNTg2NTk4ZTY5YzVlZmJiNmNmYmEwNTNkZg" alt="Product 3">
+              <h3 class="product-title">Google Pixel Watch 3 45 mm Smartwatch, Black Aluminum Case, Obsidian Active Band(494422710)</h3>
+              <p class="price">₹41,999.00</p>
+              <div class="offers">OFFERS AVAILABLE</div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+              <img src="https://www.reliancedigital.in/medias/Samsung-Watch7-Smart-Watch-494421968-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0Nzg1NHxpbWFnZS9qcGVnfGltYWdlcy9oOWYvaDQzLzEwMTc0MjU4MzE1Mjk0LmpwZ3xmNzgxNTk0MzBjYjJhOGFjNTAwYWYxOTc4NzUyZGZmNjUyZDE1OGY2ZGM2OTlkMTNlZDMxYWI2YWVkZTc1MzIz" alt="Product 4">
+              <h3 class="product-title">Samsung Galaxy Watch 7 44 mm Bluetooth Smart Watch, 3nm Processor, Dual GPS, Sapphire Glass & Armour Aluminum, 5ATM & IP68, HR, SpO2, BP & ECG Monitor, Green, SM-L310NZGAINS(494421968)
+              </h3>
+              <p class="price">₹33,490.00</p>
+              <div class="offers">OFFERS AVAILABLE</div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+              <img src="https://www.reliancedigital.in/medias/ZEBRONICS-Keyboard-Mouse-Set-492334572-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNDAwMHxpbWFnZS9qcGVnfGltYWdlcy9oMDEvaGQ1Lzk4MzA0NjYzNTUyMzAuanBnfGIwODQxNDRkMDNhNjgzM2ZlNWU5NDA2NjUyMDc4MmUzZDY0NWIxZGY5MzUzMmE3MDcwNTE5ZWIyYWFkOTliMmQ                                               " alt="Product 5">
+              <h3 class="product-title">Zebronics Zeb-Companion 107 Wireless Keyboard and Mouse Combo with nano receiver, 2.4 Ghz, 10 m range, 1200 DPI(492334572)</h3>
+              <p class="price">₹549.00</p>
+              <div class="offers">OFFERS AVAILABLE</div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+            <div class="product-container">
+              <div class="product-card">
+                <img src="https://www.reliancedigital.in/medias/Canon-EOS-1500D-DSLR-491362608-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wzNDgzNDB8aW1hZ2UvanBlZ3xpbWFnZXMvaDZlL2g1OS84OTkzNDA0MDU5Njc4LmpwZ3wxNjNhYmJjNTU0YjU1YzNlZDkyMWQ0MmIyZWM3MGMzMDg4Yjg0M2Y3ZTEyM2M0NDk4NGFjMGU0ZDI5Yjc5NWNj" alt="Product 1">
+                <h3 class="product-title">Canon EOS 1500D DSLR Camera with 18-55 mm Lens Kit(491362608)</h3>
+                <p class="price">₹41,999.00</p>
+                <div class="offers">OFFERS AVAILABLE</div>
+                <button class="add-to-cart">Add to Cart</button>
               </div>
-              <div class="actions">
-                  <button>Compare</button>
-                  <button>Add to Wishlist</button>
+              <div class="product-card">
+                <img src="https://www.reliancedigital.in/medias/Canon-EOS-200D-II-DSLR-Camera-491431412-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w3NjA2NHxpbWFnZS9qcGVnfGltYWdlcy9oZTMvaGViLzkxMzgzODM2ODM2MTQuanBnfDgyNjk5ZDZlNDNlOTgwZjQyZDQyZjcyOGQ4MjllMTY5YzdkOTdlOWRlNDU3NGRhNjljMDlmZTQzZjUxMWJkMWM" alt="Product 2">
+                <h3 class="product-title">Canon EOS 200D II DSLR Camera with 18-55 mm Lens Kit(491431412)</h3>
+                <p class="price">₹55,991.00</p>
+                <div class="offers">OFFERS AVAILABLE</div>
+                <button class="add-to-cart">Add to Cart</button>
               </div>
-          </div></A>
-        <!-- Product Card 5 -->
-        <div class="product-card">
-          <img src="https://www.reliancedigital.in/medias/Lenovo-Ideapad-Laptop-494267965-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w4ODQ4fGltYWdlL2pwZWd8aW1hZ2VzL2gyYS9oYTAvMTAwNjA0ODU2ODkzNzQuanBnfGI3YjMwNDY2YzY0ZjAwNDJiNzUzY2E4OGRhYmFlY2U2ZjI4ODkwMzMwZmE5N2I0ODE1ODcyYmQ2NTk0NjQ5NTY" alt="Laptop Image">
-          <div class="product-details">
-              <div class="product-name">Lenovo F0IN IdeaPad Pro 5 Laptop (AMD Ryzen R7-6800H/16 GB RAM/512 GB SSD/ 4GB/NVIDIA GeForce 3050 Graphics/Windows/40.64 cm (16 inch)(494267965)</div>
-              <div class="product-price"> ₹83,099.00</div>
-          </div>
-          <div class="actions">
-              <button>Compare</button>
-              <button>Add to Wishlist</button>
-          </div>
-      </div>
-        <!-- Product Card 3 -->
-        <div class="product-card">
-          <img src="https://www.reliancedigital.in/medias/Lenovo-82XQ0096IN-Laptop-494421367-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2MDM5N3xpbWFnZS9qcGVnfGltYWdlcy9oYzYvaDkxLzEwMTU3Nzg5NDQ2MTc0LmpwZ3xmOWJhZjM2OWU0ZTMxNDY5YjcwYjlmMGIxYjRmMDI0OGNkZGQ3OTkwNzRlYmRmMWUzYjFjNjY1NDM4MTI1MjI4" alt="Laptop Image">
-          <div class="product-details">
-              <div class="product-name">Lenovo 82XQ0096IN Standard Laptop (AMD Ryzen 5 7520U/16 GB RAM/512 GB SSD/AMD Radeon 610M Graphics/Windows 11 Home/FHD) 39.62 cm (15.6 inch)(494421367)</div>
-              <div class="product-price">₹44,000.00</div>
-          </div>
-          <div class="actions">
-              <button>Compare</button>
-              <button>Add to Wishlist</button>
-          </div>
-      </div>
-        <!-- Product Card 3 -->
-        <div class="product-card">
-          <img src="https://www.reliancedigital.in/medias/HP-OMEN-17-cm2027TX-Laptop-494493043-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzNzIyM3xpbWFnZS9qcGVnfGltYWdlcy9oYzgvaGI1LzEwMjEwNDAyNjY0NDc4LmpwZ3w2YWM0YzFiNzkyZTk4NmYwNGMyZGVmYTcyM2RiYTlmNTUwMTY1NjJiYmI0NGZlYzgxMDVkYzZlMDQ4OGJhZGM2" alt="Laptop Image">
-          <div class="product-details">
-              <div class="product-name">HP Omen 17 cm2027TX Gaming Laptop (Intel Core i7-13700HX/16 GB /1 TB SSD/Nvidia GeForce RTX 4060 /Windows 11 Home/QHD), 43.9 cm - 17.3 inch, Shadow Black(494493043)</div>
-              <div class="product-price"> ₹1,24,999.00</div>
-          </div>
-          <div class="actions">
-              <button>Compare</button>
-              <button>Add to Wishlist</button>
-          </div>
-      </div>
-        <!-- Product Card 3 -->
-        <div class="product-card">
-          <img src="https://www.reliancedigital.in/medias/HP-EG3081TU-Laptop-493842049-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1NDgwMHxpbWFnZS9qcGVnfGltYWdlcy9oNTIvaDEwLzEwMTUwNDcyODQzMjk0LmpwZ3w1MjI0NWJhNjE4NWU3YjhkMmFlOTdkZDFiZGYzNjBjZmVhY2IyMTliNjk1ODZjNjdkYzA5Y2YyNDFiZjhhMzdi" alt="Laptop Image">
-          <div class="product-details">
-              <div class="product-name">HP Pavilion EG3081TU Laptop (13th Gen Intel Core i5-1340P/16GB/512GB SSD/Intel Iris Xe Graphics/Windows 11 Home/MSO/FHD), 39.62cm (15.6 inch)(493842049)</div>
-              <div class="product-price">₹68,750.00</div>
-          </div>
-          <div class="actions">
-              <button>Compare</button>
-              <button>Add to Wishlist</button>
-          </div>
-      </div>
-  
+              <div class="product-card">
+                <img src="https://www.reliancedigital.in/medias/LaForte-EKLF001R-Electric-Kettles-493620514-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzNTYxNnxpbWFnZS9qcGVnfGltYWdlcy9oOGEvaDIyLzk4OTE4MDQ1Nzc4MjIuanBnfGM2NWM0ODJiNWM3NDIxNWQ1NTlhY2RlZGRhZTA5ZWU4M2JlYzQ4NmVkNjdlMmU0Yjc4YjdmMzFjOWYxYmZhNmE" alt="Product 3">
+                <h3 class="product-title">La' Forte 1.8L 1500W Stainless Steel Electric Kettle, Cord-Free, Auto Shut Off Boil-Dry Protection, EKLF001R, Red(493620514)</h3>
+                <p class="price"> ₹1,069.00</p>
+                <div class="offers">OFFERS AVAILABLE</div>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="product-card">
+                <img src="https://www.reliancedigital.in/medias/Usha-iChef-Kettle-Black-494226990-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wyMTUxMDJ8aW1hZ2UvanBlZ3xpbWFnZXMvaDI3L2g5YS8xMDA4MTc4NzgwNTcyNi5qcGd8NzNhMTdhMTc5NmRhNDQyMDZkYmM5NThhNTc0MjE1NDJiODdlNWUzZmMwNTRiNmNhYzY0NjI0MTNlZTRlOWUyNA" alt="Product 4">
+                <h3 class="product-title">Usha iChef 1.5 L Programmable Kettle, Black(494226990)</h3>
+                <p class="price">₹33,490.00</p>
+                <div class="offers">OFFERS AVAILABLE</div>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="product-card">
+                <img src="https://www.reliancedigital.in/medias/Kutchina-Rio-Stainless-Steel-Kettle-493627059-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMzE5N3xpbWFnZS9qcGVnfGltYWdlcy9oZDEvaDVmLzEwMDMyMTczMDIzMjYyLmpwZ3wxYjE0YWU0MmU2ZGVlZDc5NmQwNzAzMzZkNTI2YjQ5NGJmNTA1NTIzOTcyZDFjNzU0OGM0OTZiNWM0YWQ5MjBi" alt="Product 5">
+                <h3 class="product-title">Kutchina Rio Stainless Steel Kettle 1.5 L(493627059)</h3>
+                <p class="price">₹820.00</p>
+                <div class="offers">OFFERS AVAILABLE</div>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+            </div>
+          
+            <div class="product-container">
+              <div class="product-card">
+                <img src="https://www.reliancedigital.in/medias/Sony-WH-CH720N-Headphone-493711862-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMDYyNnxpbWFnZS9qcGVnfGltYWdlcy9oYmQvaGE0Lzk5ODE3NDI1MTQyMDYuanBnfGJmNGJjZmE2Mjk1Njk3ZjRmMzFlMWRmN2Y4MzM4YzZkYjg2NjE5YjQ2ODhkNDExODA4ZTAyMjgxZjIyMjViYzA" alt="Product 1">
+                <h3 class="product-title">Sony WH-CH720N Over-the-Ear Bluetooth Headphone with Active Noise Cancellation, Upto 35 hrs of playtime, Quick Charging, Bluetooth v5.2, Google, Alexa Voice Assistant, Black(493711862)</h3>
+                <p class="price">₹30,799.00</p>
+                <div class="offers">OFFERS AVAILABLE</div>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="product-card">
+                <img src="https://www.reliancedigital.in/medias/Candes-MG-Imperial-Mixers-493620673-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNTY1OXxpbWFnZS9qcGVnfGltYWdlcy9oNjYvaDI2Lzk4OTkxODg0MjA2MzguanBnfGRmNzk0YzRmYjQ5NjY3ZTE4M2Q5M2Y2MmEyMWIzZWJlMDg1NTgwZGI5NzBmZWMyMjllNjY3YTMxOWI1ZmYyNTM" alt="Product 2">
+                <h3 class="product-title">Candes Imperial 550W 2 Jars Mixer Grinder, White and Blue(493620673)
+                </h3>
+                <p class="price"> ₹1,789.00</p>
+                <div class="offers">OFFERS AVAILABLE</div>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="product-card">
+                <img src="https://www.reliancedigital.in/medias/Morphy-Richards-Aero-2-Jar-500W-Mixer-491473304-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wxMTk1MTl8aW1hZ2UvanBlZ3xpbWFnZXMvaDE5L2hjZS85NTUzNDQ0ODY0MDMwLmpwZ3xkNzJlYjk5ZjUwNjc4ZjFiZWJlMDY5NDExYWI0Y2JlM2FjNWZhMDc4OGMwMGE3NDBlZGJhYzVkZWZkYjMxZmMz" alt="Product 3">
+                <h3 class="product-title">Morphy Richards AERO 500 Watts 2 Jar Mixer Grinder(491473304)
+                </h3>
+                <p class="price">₹1,999.00</p>
+                <div class="offers">OFFERS AVAILABLE</div>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="product-card">
+                <img src="https://www.reliancedigital.in/medias/Panasonic-Rice-Cooker-492911295-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxOTY4NHxpbWFnZS9qcGVnfGltYWdlcy9oYTcvaDA1LzEwMDIyNzcwNzA0NDE0LmpwZ3w4NWU2ZTRjOGE2MTYwZjNhYjlkYmVhMTYzNzBlOWNlMjA4MWJlYjM3MTVhMjdkZTE4OGNhNmRjMDNkZTZhMzc0" alt="Product 4">
+                <h3 class="product-title">Panasonic 1.8 Litres Rice Cooker, SR-WA18H (AT)(492911295)
+                </h3>
+                <p class="price">:  ₹2,899.00</p>
+                <div class="offers">OFFERS AVAILABLE</div>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="product-card">
+                <img src="https://www.reliancedigital.in/medias/Havells-Crystal-Coffee-Makers-and-Grinders-491903154-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2MDU3M3xpbWFnZS9qcGVnfGltYWdlcy9oYjkvaGQ2Lzk0Mzg0MTY3NjQ5NTguanBnfGU0YmFkNGViYmIwYzQ4NTFhZGUxY2FiOTdlNzg2MTQ5YTRiMjU3ODJhOThlY2VlNzM4MWQzMDRhOWIyNGIwZDc" alt="Product 5">
+                <h3 class="product-title">Havells 0.7 Litres Drip Coffee Maker(491903154)/h3>
+                <p class="price"> ₹2,599.00</p>
+                <div class="offers">OFFERS AVAILABLE</div>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+            </div>
+              <div class="product-container">
+                <div class="product-card">
+                  <img src="https://www.jiomart.com/images/product/original/rvabrvoja9/laxmi-nature-wood-sheesham-wood-5-seater-sofa-set-for-living-room-furniture-wooden-sofa-set-5-seater-for-home-office-3-1-1-sofa-natural-finish-5-seater-wooden-sofa-product-images-orvabrvoja9-p608058244-0-202402181416.jpg?im=Resize=(420,420)" alt="Product 1">
+                  <h3 class="product-title">LAXMI NATURE WOOD Sheesham Wood 5 Seater Sofa Set for Living Room Furniture Wooden Sofa Set 5 Seater for Home & Office (3+1+1 Sofa, Natural Finish) | 5 Seater Wooden Sofa</h3>
+                  <p class="price">₹41,999.00</p>
+                  <div class="offers">OFFERS AVAILABLE</div>
+                  <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                  <img src="https://www.reliancedigital.in/medias/WAHL-WCHD4-1124-HAIRDRYER-492573314-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1MzcyfGltYWdlL2pwZWd8aW1hZ2VzL2g3Ny9oZjcvOTc1MTE0MjM2NzI2Mi5qcGd8Mzg1NGFkZjc3MjE5ZDMzNWY0MGQxNDA1ZGEzZjI3ZjljMDQ1ODVhOGJjZTk1NGVjOWNkZWQzOWY3ODExZjY4Mw" alt="Product 2">
+                  <h3 class="product-title">Wahl 1200 Watts Hair Dryer, 2 Heat Settings, Ultra Portable, WCHD4-1124, Black(492573314)
+                  </h3>
+                  <p class="price"> ₹1,329.00</p>
+                  <div class="offers">OFFERS AVAILABLE</div>
+                  <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                  <img src="https://www.reliancedigital.in/medias/Noise-Color-Fit-Pulse-2-Max-493837997-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzNzQwMHxpbWFnZS9qcGVnfGltYWdlcy9oODUvaDU5LzEwMTk5NDQ5OTkzMjQ2LmpwZ3w5ODJhNzZmZTM3YzdmOGEwNzEwMTg3NGU4MTExNDdiMWE3OTEzNGIwNzYzMDM0MThmZWM5ZTcwZGM5Y2MyNmFi" alt="Product 3">
+                  <h3 class="product-title">Noise Pulse 2 Max 4.69 cm (1.85 inch) Display, Bluetooth Calling Smart Watch, 10 Days Battery, 550 NITS Brightness, Smart DND, 100 Sports Modes, Smartwatch for Men and Women (Jet Black)(493837997)
+                  </h3>
+                  <p class="price">₹1,399.00</p>
+                  <div class="offers">OFFERS AVAILABLE</div>
+                  <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                  <img src="https://www.reliancedigital.in/medias/Usha-iChef-Kettle-Black-494226990-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wyMTUxMDJ8aW1hZ2UvanBlZ3xpbWFnZXMvaDI3L2g5YS8xMDA4MTc4NzgwNTcyNi5qcGd8NzNhMTdhMTc5NmRhNDQyMDZkYmM5NThhNTc0MjE1NDJiODdlNWUzZmMwNTRiNmNhYzY0NjI0MTNlZTRlOWUyNA" alt="Product 4">
+                  <h3 class="product-title">Usha iChef 1.5 L Programmable Kettle, Black(494226990)</h3>
+                  <p class="price">₹33,490.00</p>
+                  <div class="offers">OFFERS AVAILABLE</div>
+                  <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                  <img src="https://www.reliancedigital.in/medias/Kutchina-Rio-Stainless-Steel-Kettle-493627059-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMzE5N3xpbWFnZS9qcGVnfGltYWdlcy9oZDEvaDVmLzEwMDMyMTczMDIzMjYyLmpwZ3wxYjE0YWU0MmU2ZGVlZDc5NmQwNzAzMzZkNTI2YjQ5NGJmNTA1NTIzOTcyZDFjNzU0OGM0OTZiNWM0YWQ5MjBi" alt="Product 5">
+                  <h3 class="product-title">Kutchina Rio Stainless Steel Kettle 1.5 L(493627059)</h3>
+                  <p class="price">₹820.00</p>
+                  <div class="offers">OFFERS AVAILABLE</div>
+                  <button class="add-to-cart">Add to Cart</button>
+                </div>
+              </div>
+            
+        
+            
+    
           <!-- Add more product cards here -->
     <section class='testimonials'>
       <div class='container '>
